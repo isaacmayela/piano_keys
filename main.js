@@ -2,12 +2,15 @@
 const keys = ['c-key', 'd-key', 'e-key', 'f-key', 'g-key', 'a-key', 'b-key', 'high-c-key', 'c-sharp-key', 'd-sharp-key', 'f-sharp-key', 'g-sharp-key', 'a-sharp-key'];
 const notes = [];
 keys.forEach(function(key){
-  notes.push(document.getElementById(key));
+notes.push(document.getElementById(key));
 })
 
 // Write named functions that change the color of the keys below
+function kePlay(params) {
+  notes[0].style.background = "blue"
+}
 
-
+notes[0].addEventListener("click", kePlay)
 // Write a named function with event handler properties
 
 
